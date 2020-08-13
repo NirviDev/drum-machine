@@ -1,0 +1,103 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(176, 176, 192);
+  height: 100vh;
+}
+
+#drum-machine {
+  background-color: rgb(113, 113, 134);
+  padding: 20px;
+  width: 40%;
+  -webkit-box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0);
+}
+
+.switch-button {
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.switch {
+  border-color: white !important;
+}
+
+.switch-off {
+  background-color: rgb(163, 163, 163) !important;
+}
+
+.switch-on {
+  background-color: rgb(134, 161, 111) !important;
+}
+
+.left-section {
+  margin: auto;
+}
+
+.left-top-section {
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+#display {
+  background-color: rgb(236, 233, 229);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+p {
+  margin: 0.5rem !important;
+}
+
+.drum-pad {
+  width: 300px !important;
+  margin: 5px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+}
+
+.btn-dark:active {
+  transform: translateY(3px);
+}
+
+.btn-dark:focus {
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(255, 255, 255) !important;
+  -moz-box-shadow: 0px 0px 5px 0px rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 5px 0px rgb(255, 255, 255) !important;
+}
+
+.volume {
+  display: inline-block;
+  width: 20px;
+  height: 200px;
+  padding: 0;
+}
+
+.volume input {
+  width: 200px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 100px 120px;
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 767px) {
+  .volume {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 20px;
+  }
+  .volume input {
+    width: 200px;
+    margin: auto;
+    transform: rotate(0deg);
+  }
+}
